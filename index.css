@@ -44,6 +44,11 @@ img {
     height: 400px;
 }
 
+.try-repo > a {
+    color: black;
+    text-decoration: none;
+}
+
 footer {
     background-color: #333;
     color: #fff;
