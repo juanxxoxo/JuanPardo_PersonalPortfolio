@@ -3,12 +3,15 @@
 
 <head>
     <title>Juan Pardo - Portfolio</title>
+    <script src="/index.js"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
     <header>
-        <a class="header-name" href="/index.html"><h1>Juan Manuel Pardo López</h1></a>
+        <a class="header-name" href="/index.html">
+            <h1>Juan Manuel Pardo López</h1>
+        </a>
         <nav>
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
@@ -26,28 +29,26 @@
             <h4>Tetris game using Javascript</h4>
             <a href="https://tetrisdesktopdemo.netlify.app/"><img src="/images/project1.png" alt="tetris"></a>
             <div class="try-repo"><a href="https://tetrisdesktopdemo.netlify.app/"><button>Try it</button></a>
-            <a href="https://github.com/juanxxoxo/TetrisDemo"><button>Repository</button></a></div>
+                <a href="https://github.com/juanxxoxo/TetrisDemo"><button>Repository</button></a>
+            </div>
             <h4>TicTacToe undefeatable AI using Javascript</h4>
             <a href="https://tictactoedesign.netlify.app/"><img src="/images/project2.png" alt="tictactoe"></a>
             <div class="try-repo"><a href="https://tictactoedesign.netlify.app/"><button>Try it</button></a>
-            <a href="https://github.com/juanxxoxo/TicTacToe"><button>Repository</button></a></div>
+                <a href="https://github.com/juanxxoxo/TicTacToe"><button>Repository</button></a>
+            </div>
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form action="submit-form.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
         </section>
     </main>
+    <form id="my-form" action="https://formspree.io/f/mbjegwab" method="POST">
+        <input type="text" name="name" placeholder="Your name">
+        <input type="email" name="_replyto" placeholder="Your email address">
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div id="success-message" style="display: none;">Thanks for your message! We'll be in touch shortly.</div>
+    <script src="/index.js"></script>
     <footer>
         <p>&copy; Juan Pardo 2023</p>
     </footer>
